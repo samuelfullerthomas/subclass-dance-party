@@ -3,25 +3,41 @@ body, html{
 }
 body{
   margin: 0px;
-  background-color:#444;
+
   font-size: 18px;
 }
 body, a:link, a:visited, a:active{
-  color: lightblue;
+  color: #99FF33;
 }
-.title, .addDancerButton{
+.addDancerButton, .lineUp{
   padding:5px 12px;
-  float:right;
+  text-align: center;
+  vertical-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;
+  font-size: 24px
 }
 .topbar{
-  height:32px;
-  background-color: #555;
+  height:60px;
+  background-color: #000000;
+  text-align: center;
 }
 .title{
-  background-color: #777;
+  font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  line-height: 26.3999996185303px;
+  margin-top: 5px
 }
 .dancer{
-  border:10px solid red;
-  border-radius:10px;
-  position:absolute;
+  background-image: url("THINKYKANYE.gif");
+  position: absolute;
+}
+.background {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
