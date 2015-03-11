@@ -1,23 +1,31 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Object Dance Party</title>
+    <title>YEYEYEKANYEDANCEPARTY</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <script src="lib/jquery.js"></script>
     <script src="src/dancer.js"></script>
     <script src="src/blinkyDancer.js"></script>
     <script src="src/crazyDancer.js"></script>
     <script src="src/lazyDancer.js"></script>
-
+    <script src="src/dotDancer.js"></script>
+    <audio controls autoplay loop>
+      <source src="audio/bsi.mp3" type="audio/mpeg">
+    </audio>
   </head>
+
   <body>
-    <img src="dancefloor.jpg" class="background" alt>
+    <img src="img/dancefloor.png" class="background" alt>
     <div class="topbar">
-      <span class="title">KANYE DANCE PARTY! </span>
-      <a href="#" class="addDancerButton" data-dancer-maker-function-name="makeBlinkyDancer">THINKANYE</a>
-      <a href="#" class="addDancerButton" data-dancer-maker-function-name="makeCrazyDancer">SMILE-YE</a>
-      <a href="#" class="addDancerButton" data-dancer-maker-function-name="makeLazyDancer">SAD-YE</a>
-      <a href="#" class="lineUp" >Line Up!</a>    
+      <span class="title">KANYE DANCE PARTY!</span>
+      <button class="addDancerButton" data-dancer-maker-function-name="makeBlinkyDancer">THINKAN-YE</button>
+      <button class="addDancerButton" data-dancer-maker-function-name="makeCrazyDancer">SMILE-YE</button>
+      <button class="addDancerButton" data-dancer-maker-function-name="makeLazyDancer">SAD-YE</button>
+      <button class="addDancerButton" data-dancer-maker-function-name="Dot">KILL-YE</button>
+      <button class="lineUp">LIN-YE</button>
+<!--       <button class="addDancerButton" data-dancer-maker-function-name="kimyeDancer">KIM-YE</button>
+ -->      <button class="interact">INTERACT-YE</button>   
+      <button class="empty">CLEAR-YE</button>  
     </div>
     <script src="src/init.js"></script>
   </body>

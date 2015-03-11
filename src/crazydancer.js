@@ -1,16 +1,20 @@
 var makeCrazyDancer = function(top, left, timeBetweenSteps){
   makeDancer.call(this, top, left, timeBetweenSteps)
+  
+  this.$node = $('<span class="dancer"><img src="img/SMILE-YE.png" alt></span>').addClass("CrazyDancer");
+  this.setPosition(top, left);
+  this.step();
 };
 
-makeCrazyDancer.prototype = Object.create(makeDancer.prototype)
-
-makeCrazyDancer.prototype.constructor = makeCrazyDancer
+makeCrazyDancer.prototype = Object.create(makeDancer.prototype);
+makeCrazyDancer.prototype.constructor = makeCrazyDancer;
 
 makeCrazyDancer.prototype.step = function(){
-      makeDancer.prototype.step.call(this)
-      this.$node.addClass( 'follow' )
-      this.$node.mousemove(function(e){
-        //$('.follow').css({'top': e.clientY - 20, 'left': e.clientX - 20});
-        $('.follow').css({'top': ($("body").height() * Math.random()), 'left': ($("body").width() * Math.random())});
-      });
+  var self = this;
+  
+  makeDancer.prototype.step.call(this);
+
+  self.$node.mouseover(function(){
+  	setInterval(function(){self.$node.css({transform: "rotate(" + Math.random() * 360 + "deg)"})}, 100);
+  });
 }
